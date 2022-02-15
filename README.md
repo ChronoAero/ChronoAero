@@ -5,9 +5,7 @@
 
 - 🌱 I’m currently learning everything 🤣
 - ⚡ Hobbies: Umm... Is studying a hobby? I also like to draw arts, currently trying to learn a bit of digital art (shoot, still suck at it though)
-- 💬 If you want to reach me out, here are my contacts:
-
-- Discord: [Chrono#9327]()
+- 💬 If you want to reach me out, you can contact me via discord (Chrono#9327)
  
 ## Language and tools
 
