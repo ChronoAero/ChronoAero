@@ -1,6 +1,6 @@
 # Hi! I'm ChronoAero
 
-🔗 [chronoaero.github.io](chronoaero.github.io)
+🔗 [chronoaero.github.io](https://chronoaero.github.io)
 
 ## I'm a high school student and simply a ~~hacker~~ programmer, who kept trying to learn 👾
 
