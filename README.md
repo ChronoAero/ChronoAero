@@ -8,7 +8,7 @@
 - 💬 If you want to reach me out, here are my contacts:
 
 <img align="left" alt="Discord" width="26px" src="https://discord.com/assets/3437c10597c1526c3dbd98c737c2bcae.svg" style="padding-right:10px;" />
-Chrono#9327
+#### Chrono#9327
 
 <br/>
   
