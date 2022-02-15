@@ -1,6 +1,6 @@
 # Hi! I'm ChronoAero
 
-<img align="left" alt="Visual Studio Code" width="250px" src="https://cdn.discordapp.com/attachments/839836588036849725/942816521183457300/pp.png" style="padding-right:10px;" />
+<img alt="Profile" width="200px" src="https://cdn.discordapp.com/attachments/839836588036849725/942816521183457300/pp.png" style="padding-right:10px;" />
 
 🔗 [chronoaero.github.io](https://chronoaero.github.io)
 
@@ -8,6 +8,8 @@
 
 - 🌱 I’m currently learning everything 🤣
 - ⚡ Hobbies: Umm... Is studying a hobby? I also like drawing arts, currently trying to learn a bit of digital art (shoot, still suck at it though)
+
+<br/>
 
 ## Language and tools
 
@@ -25,7 +27,7 @@
 
 #### I know a bit of:
 
-<img align="left" alt="GitHub" width="26px" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" style="padding-right:10px;" />
+<img align="left" alt="Python" width="26px" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" style="padding-right:10px;" />
 <br/>
 
 <!---
