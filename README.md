@@ -26,6 +26,8 @@
 <img align="left" alt="Python" width="26px" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" style="padding-right:10px;" />
 <br/>
 
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=chronoaero)](https://github.com/anuraghazra/github-readme-stats)
+
 <!---
 ChronoAero/ChronoAero is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
