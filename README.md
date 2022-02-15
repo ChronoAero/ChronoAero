@@ -1,7 +1,7 @@
 # Hi! I'm ChronoAero
 🔗 [chronoaero.github.io](https://chronoaero.github.io)
 
-## I'm a high school student and simply a ~~hacker~~ programmer, who kept learning 👾
+## I'm a high school student and simply a ~~hacker~~ programmer👾
 
 - 🌱 I’m currently learning everything 🤣
 - ⚡ Hobbies: Umm... Is studying a hobby? I also like to draw arts, currently trying to learn a bit of digital art (shoot, still suck at it though)
