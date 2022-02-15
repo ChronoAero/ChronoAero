@@ -26,6 +26,8 @@
 <img align="left" alt="Python" width="26px" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" style="padding-right:10px;" />
 <br/>
 
+## Stats
+
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=chronoaero)](https://github.com/anuraghazra/github-readme-stats)
 
 <!---
