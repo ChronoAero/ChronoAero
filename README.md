@@ -3,8 +3,8 @@
 
 ## I'm a high school student and simply a ~~hacker~~ programmer, who kept trying to learn 👾
 
-- 🌱 I’m currently learning everything 🤣
-- ⚡ Hobbies: Umm... Is studying a hobby? I also like to draw arts, currently trying to learn a bit of digital art (shoot, still suck at it though)
+#### 🌱 I’m currently learning everything 🤣
+#### ⚡ Hobbies: Umm... Is studying a hobby? I also like to draw arts, currently trying to learn a bit of digital art (shoot, still suck at it though)
 
 ## Language and tools
 
