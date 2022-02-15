@@ -4,6 +4,9 @@
 
 ## I'm a high school student and simply a ~~hacker~~ programmer, who kept trying to learn 👾
 
+- 🌱 I’m currently learning everything 🤣
+- ⚡ Hobbies: Umm... Is studying a hobby? I enjoy it... Ok, well at least I also like drawing arts, currently trying to learn a bit of digital art (shoot, still suck at it though)
+
 ## Language and tools
 
 #### Most of my works revolve around:
@@ -14,14 +17,14 @@
 <img align="left" alt="JavaScript" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" style="padding-right:10px;" />
 <img align="left" alt="React" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" style="padding-right:10px;" />
 <img align="left" alt="MongoDB" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" style="padding-right:10px;" />
-<img align="left" alt="GitHub" width="26px" src="https://user-images.githubusercontent.com/3369400/139448065-39a229ba-4b06-434b-bc67-616e2ed80c8f.png" style="padding-right:10px;" />
+
+
 <br/>
 
 #### I know a bit of:
 
 <img align="left" alt="GitHub" width="26px" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" style="padding-right:10px;" />
 <br/>
-
 
 <!---
 ChronoAero/ChronoAero is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
