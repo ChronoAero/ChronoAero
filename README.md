@@ -1,7 +1,4 @@
 # Hi! I'm ChronoAero
-
-<img alt="Profile" width="125px" src="https://cdn.discordapp.com/attachments/839836588036849725/942816521183457300/pp.png" style="padding-right:10px;" />
-
 🔗 [chronoaero.github.io](https://chronoaero.github.io)
 
 ## I'm a high school student and simply a ~~hacker~~ programmer, who kept trying to learn 👾
