@@ -1,8 +1,6 @@
 # Hi! I'm ChronoAero
 
 <img align="left" alt="Visual Studio Code" width="250px" src="https://cdn.discordapp.com/attachments/839836588036849725/942816521183457300/pp.png" style="padding-right:10px;" />
-<br/>
-<br/>
 
 🔗 [chronoaero.github.io](https://chronoaero.github.io)
 
