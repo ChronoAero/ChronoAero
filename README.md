@@ -4,7 +4,7 @@
 ## I'm a high school student and simply a ~~hacker~~ programmer👾
 
 - 🌱 I’m currently learning everything 🤣
-- ⚡ Hobbies: Umm... Is studying a hobby? I also like to draw arts, currently trying to learn a bit of digital art (shoot, still suck at it though)
+- ⚡ I like to play games (for fun though, not for competitive purpose, I'm not that good, shoot)
 - 💬 If you want to reach me out, you can contact me via ```{ Discord: Chrono#9327, Email: tanjoshua13tj@gmail.com }```
  
 ## Language and tools
