@@ -7,7 +7,7 @@
 - ⚡ Hobbies: Umm... Is studying a hobby? I also like to draw arts, currently trying to learn a bit of digital art (shoot, still suck at it though)
 - 💬 If you want to reach me out, here are my contacts:
 
-<img alt="Discord" width="26px" src="https://discord.com/assets/3437c10597c1526c3dbd98c737c2bcae.svg" style="padding-right:10px;" /><br/>
+<img alt="Discord" align="left" width="26px" src="https://discord.com/assets/3437c10597c1526c3dbd98c737c2bcae.svg" style="padding-right:10px;" /><br/>
 #### Chrono#9327
   
 ## Language and tools
