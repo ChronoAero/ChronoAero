@@ -9,8 +9,6 @@
 - 🌱 I’m currently learning everything 🤣
 - ⚡ Hobbies: Umm... Is studying a hobby? I also like drawing arts, currently trying to learn a bit of digital art (shoot, still suck at it though)
 
-<br/>
-
 ## Language and tools
 
 #### Most of my works revolve around:
