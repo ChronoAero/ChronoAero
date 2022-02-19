@@ -2,10 +2,10 @@
   "name": "chronoaero.github.io",
   "version": "1.0.0",
   "description": "🔗 [chronoaero.github.io](https://chronoaero.github.io)",
-  "main": "./dist/ts/index.js",
+  "main": "./dist/app/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "concurrently \"tsc -w\" \"nodemon .\" \"webpack --watch\" \"npx tailwindcss -i tailwind.css -o ./dist/css/style.css --watch\"",
+    "dev": "concurrently \"tsc -w\" \"webpack --watch\" \"nodemon .\" \"npx tailwindcss -i tailwind.css -o ./dist/css/style.css --watch\"",
     "webpack": "webpack",
     "postcss": "postcss tailwind.css -o dist/css/style.css"
   },
@@ -17,7 +17,7 @@
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
     "axios": "^0.24.0",
-    "express": "^4.17.2",
+    "express": "^4.17.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.6",
@@ -25,7 +25,6 @@
     "redux": "^4.1.2",
     "redux-devtools-extension": "^2.13.9",
     "scroll": "^3.0.1",
-    "socket.io": "^4.4.1",
     "socket.io-client": "^4.4.1",
     "ts-loader": "^9.2.6"
   },
