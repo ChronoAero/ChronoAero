@@ -1,7 +1,7 @@
 {
-  "name": "authtest",
+  "name": "chronoaero.github.io",
   "version": "1.0.0",
-  "description": "",
+  "description": "🔗 [chronoaero.github.io](https://chronoaero.github.io)",
   "main": "./dist/ts/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,7 +10,7 @@
     "postcss": "postcss tailwind.css -o dist/css/style.css"
   },
   "keywords": [],
-  "author": "",
+  "author": "ChronoAero",
   "license": "ISC",
   "dependencies": {
     "@types/express": "^4.17.13",
@@ -20,14 +20,28 @@
     "express": "^4.17.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "react-scroll": "^1.8.4",
+    "redux": "^4.1.2",
+    "redux-devtools-extension": "^2.13.9",
+    "scroll": "^3.0.1",
     "socket.io": "^4.4.1",
     "socket.io-client": "^4.4.1",
     "ts-loader": "^9.2.6"
   },
   "devDependencies": {
+    "@types/react-scroll": "^1.8.3",
     "concurrently": "^7.0.0",
     "tailwindcss": "^3.0.15",
     "webpack": "^5.66.0",
     "webpack-cli": "^4.9.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChronoAero/ChronoAero.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ChronoAero/ChronoAero/issues"
+  },
+  "homepage": "https://github.com/ChronoAero/ChronoAero#readme"
 }
