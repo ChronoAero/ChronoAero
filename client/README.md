@@ -1,11 +1,11 @@
 # Hi! I'm ChronoAero
 🔗 [chronoaero.github.io](https://chronoaero.github.io)
 
-## I'm a high school student and simply a ~~hacker~~ programmer👾
+## I'm a high school student and simply a ~~hacker~~ programmer 👾
 
 - 🌱 I’m currently learning everything 🤣
-- ⚡ Hobbies: Umm... Is studying a hobby? I also like to draw arts, currently trying to learn a bit of digital art (shoot, still suck at it though)
-- 💬 If you want to reach me out, you can contact me via discord (Chrono#9327)
+- ⚡ I like to code, study, and play games (for fun though, not for competitive purpose, I'm not that good, shoot)
+- 💬 If you want to reach me out, you can contact me via ```{ Discord: Chrono#9327, Email: tanjoshua13tj@gmail.com }```
  
 ## Language and tools
 
@@ -15,8 +15,10 @@
 <img align="left" alt="HTML5" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" style="padding-right:10px;" />
 <img align="left" alt="CSS3" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" style="padding-right:10px;" />
 <img align="left" alt="JavaScript" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" style="padding-right:10px;" />
+<img align="left" alt="TypeScript" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" style="padding-right:10px;" />
 <img align="left" alt="React" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" style="padding-right:10px;" />
 <img align="left" alt="MongoDB" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" style="padding-right:10px;" />
+<img align="left" alt="UnityGameEngine" width="26px" src="https://i.redd.it/tu3gt6ysfxq71.png" style="padding-right:10px;" />
 
 
 <br/>
@@ -29,7 +31,6 @@
 ## Stats
 
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=chronoaero)](https://github.com/anuraghazra/github-readme-stats)
-
 <!---
 ChronoAero/ChronoAero is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
