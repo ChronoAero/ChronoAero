@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-import { Cover } from './components/cover'
-import { Navbar } from './components/navbar'
-import { Section } from './components/section'
-import { Showcase } from './components/showcase'
 import { createStore } from 'redux'
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { showcaseReducer } from "./reducers/showcase.reducer"
 import { Provider } from 'react-redux'
+import { Cover } from './components/cover'
+import { Navbar } from './components/navbar'
+import { Section } from './components/section'
+import { Showcase } from './components/showcase'
+
 
 export let rootStore = createStore(showcaseReducer, composeWithDevTools());
 

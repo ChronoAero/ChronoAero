@@ -2,6 +2,7 @@ import React from "react";
 import { Types, State, Pages } from "../reducers/showcase.reducer"
 import { useDispatch, useSelector } from 'react-redux'; 
 import { EquationGen } from './equationGen';
+import { Webhook } from './webhook'
 
 interface Props{
 
@@ -27,12 +28,16 @@ export const Showcase = (props: Props) => {
                 return <div key={index} onClick={ () => {dispatch({type: type}) }} className="text-subcontrast p-5 hover:text-contrast w-auto whitespace-nowrap">{navContent[index]}</div>
             })}
         </div>
-        <div className="bg-secondary h-56 rounded-md my-5 mx-1 p-5">
+        <div className="bg-secondary h-56 rounded-md my-5 mx-1 p-5 overflow-y-auto">
             <div className="text-subcontrast font-mono">
                 {((page) => {
                     switch(page){
                         case Pages.EQUATION_GEN:
                             return <EquationGen></EquationGen>
+                        case Pages.WEBHOOK:
+                            return <Webhook></Webhook>
+                        case Pages.VIDEOCALL:
+                            return <div>Video Call</div>
                         default:
                             return <div>Shell is ready, waiting for your commands...</div>
                     }
@@ -45,5 +50,9 @@ export const Showcase = (props: Props) => {
             <div onClick={() => {dispatch({type: "showcase/increment"})}} className="ml-auto text-contrast" > + 
             </div>
         </div>
+        <div className="p-1 text-subcontrast font-bold">In for a challenge?</div>
+        <div className="bg-secondary h-56 rounded-md my-5 mx-1 p-5 overflow-y-auto"></div>
+        <div className="p-1 text-subcontrast font-bold">Game Development</div>
+        <div className="bg-secondary h-56 rounded-md my-5 mx-1 p-5 overflow-y-auto"></div>
     </div>
 }

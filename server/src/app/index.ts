@@ -1,9 +1,22 @@
-import express from 'express'
-import { Request, Response } from 'express'
+import express from 'express';
+import http from 'http';
+import cors from 'cors';
+import { Server } from 'socket.io';
+import { Request, Response } from 'express';
 import { router as webhook } from './routers/webhook';
+import { Socket } from 'socket.io';
+
 //Server app
 
 const app = express();
+const server = http.createServer(app);
+export const io : Server = require('socket.io')(server, {
+    cors: '*'
+});
+
+app.use(cors());
+app.use(express.json());
+app.use(express.urlencoded());
 
 app.use('/webhook', webhook);
 
@@ -18,7 +31,11 @@ app.get('/', (req:Request, res: Response) => {
 app.get('*', (req:Request, res:Response) => { 
     res.send('404');
 });
+ 
+io.on('connection', (socket :Socket) => {
+    socket.join(`webhook/${socket.id}`);
+})
 
-app.listen(4201, () => {
+server.listen(4201, () => {
     console.log('Server is up on http://localhost:4201');
 });

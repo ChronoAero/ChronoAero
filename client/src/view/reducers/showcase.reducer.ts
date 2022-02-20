@@ -1,3 +1,6 @@
+import { Socket } from "socket.io-client";
+import { io } from 'socket.io-client';
+
 export enum Pages{
     NULL,
     EQUATION_GEN,
@@ -5,7 +8,7 @@ export enum Pages{
     VIDEOCALL
 }
 
-export type Types = "showcase/equation_gen" | "showcase/webhook" | "showcase/videocall" | "showcase/increment" | "showcase/decrement" | "showcase/equation_rendr" ;
+export type Types = "showcase/equation_gen" | "showcase/webhook" | "showcase/videocall" | "showcase/increment" | "showcase/decrement" | "showcase/equation_rendr" | "showcase/socket_setup" | "showcase/append_requests";
 
 interface Action{
     type:Types
@@ -15,9 +18,16 @@ interface Action{
 export interface State{
     page: Pages
     equation: any
+    socket: Socket
+    requests: any[]
 }
 
-export const showcaseReducer = (state:State = {page:NaN, equation:""}, action:Action) => {
+export const showcaseReducer = (state:State = {
+    page:NaN,
+    equation:"",
+    socket: io('http://localhost:4201'),
+    requests: []
+}, action:Action) => {
     switch(action.type){
         case "showcase/equation_gen":
             return {...state, page : Pages.EQUATION_GEN}
@@ -31,6 +41,11 @@ export const showcaseReducer = (state:State = {page:NaN, equation:""}, action:Ac
             return {...state, page: state.page + 1 >= Object.keys(Pages).length/2 - 1 ? Object.keys(Pages).length/2 - 1 : state.page + 1}
         case "showcase/equation_rendr":
             return {...state, equation: action.payload || "[Error, nothing to render!]"}
+        case "showcase/socket_setup":
+            return {...state, socket: action.payload || undefined}
+        case "showcase/append_requests":
+            console.log(state.socket.id)
+            return {...state, requests: [...state.requests, action.payload]}
         default:
             return state
     }

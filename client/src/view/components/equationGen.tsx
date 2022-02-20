@@ -38,7 +38,7 @@ export const EquationGen = () => {
                 s += `${(stringifyCoeff(j==0, coeff[j]))}${varsletter[j]}`;
             }
             s += ` = ${c}\n`;
-            sc[i] = <div>{s}</div>;
+            sc[i] = <div key={i}>{s}</div>;
         }
 
         return sc;
