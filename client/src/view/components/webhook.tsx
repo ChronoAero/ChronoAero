@@ -1,5 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { ids } from "webpack";
 import { State } from "../reducers/showcase.reducer";
 
 export const Webhook = () => {
@@ -7,11 +8,14 @@ export const Webhook = () => {
     const dispatch = useDispatch();
     const socket = useSelector( (state:State) => {return state.socket});
     const requests = useSelector( (state: State) => {return state.requests});
+    const setupDone = useSelector( (state:State) => {return state.setupDone});
 
-    socket.on('webhook/request_data', (data:string) => {
-        console.log('em') // it sends 1,2,4,8,16 requests, why???
-        dispatch({type: "showcase/append_requests", payload: data})
-    })
+    if(!setupDone){
+        socket.on('webhook/request_data', (data:string) => {
+            dispatch({type: "showcase/append_requests", payload: data});
+        })
+        dispatch({type:"showcase/socket_setup"});
+    }
 
     return <div className="flex gap-12">
         <div className="flex-1">

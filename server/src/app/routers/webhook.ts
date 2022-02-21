@@ -1,5 +1,5 @@
 import express, {Request, Response} from 'express';
-import { io } from '..';
+import { io, csrfProtection } from '..';
 
 interface ReqData{
     method: string
@@ -10,18 +10,17 @@ interface ReqData{
 //http connection
 export const router = express.Router();
 
-router.get('/', (req:Request, res:Response) => {
+router.get('/', csrfProtection, (req:Request, res:Response) => {
     res.send('send a server notice about webhook here')
 })
 
-router.all('/:id', (req:Request, res:Response) => {
-    res.send(`${req.method}: ${req.params.id}`)
+router.all('/:id', csrfProtection, (req:Request, res:Response) => {
+    res.send('Your request is successfully sent! Please check https://chronoaero.github.io')
     const reqData:ReqData = {
         method: req.method,
         headers: req.headers,
         body: req.body
     }
-    console.log('ok');
     io.to(`webhook/${req.params.id}`).emit('webhook/request_data', reqData);
 })
 

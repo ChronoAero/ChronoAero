@@ -19,6 +19,7 @@ export interface State{
     page: Pages
     equation: any
     socket: Socket
+    setupDone: boolean
     requests: any[]
 }
 
@@ -26,6 +27,7 @@ export const showcaseReducer = (state:State = {
     page:NaN,
     equation:"",
     socket: io('http://localhost:4201'),
+    setupDone: false,
     requests: []
 }, action:Action) => {
     switch(action.type){
@@ -42,9 +44,8 @@ export const showcaseReducer = (state:State = {
         case "showcase/equation_rendr":
             return {...state, equation: action.payload || "[Error, nothing to render!]"}
         case "showcase/socket_setup":
-            return {...state, socket: action.payload || undefined}
+            return {...state, setupDone: true};
         case "showcase/append_requests":
-            console.log(state.socket.id)
             return {...state, requests: [...state.requests, action.payload]}
         default:
             return state
