@@ -10,11 +10,11 @@ interface ReqData{
 //http connection
 export const router = express.Router();
 
-router.get('/', csrfProtection, (req:Request, res:Response) => {
+router.get('/', (req:Request, res:Response) => {
     res.send('send a server notice about webhook here')
 })
 
-router.all('/:id', csrfProtection, (req:Request, res:Response) => {
+router.all('/:id', (req:Request, res:Response) => {
     res.send('Your request is successfully sent! Please check https://chronoaero.github.io')
     const reqData:ReqData = {
         method: req.method,

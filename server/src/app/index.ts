@@ -23,21 +23,23 @@ export const io : Server = require('socket.io')(server, {
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded());
+app.use(require('express-limit').limit({
+    max:    5,       
+    period: 60 * 1000 
+}))
+app.use(csrfProtection)
 
 app.use('/webhook', webhook);
 
-app.get('/favicon.ico', csrfProtection, (req:Request, res: Response) => {
+app.get('/favicon.ico', (req:Request, res: Response) => {
     res.redirect('https://avatars.githubusercontent.com/u/75560157?v=4');
 })
 
-app.get('/', csrfProtection, (req:Request, res: Response) => {
+app.get('/', (req:Request, res: Response) => {
     res.send('Send a server notice html here');
 });
 
-app.get('*', [require('express-limit').limit({
-    max:    5,        // 5 requests
-    period: 60 * 1000 // per minute (60 seconds)
-}), csrfProtection], (req:Request, res:Response) => { 
+app.get('*', (req:Request, res:Response) => { 
     res.send('404');
 });
  
