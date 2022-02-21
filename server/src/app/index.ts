@@ -5,10 +5,15 @@ import { Server } from 'socket.io';
 import { Request, Response } from 'express';
 import { router as webhook } from './routers/webhook';
 import { Socket } from 'socket.io';
+import csurf from 'csurf'
+import cookieParser from 'cookie-parser'
 
 //Server app
+export const csrfProtection = csurf({ cookie: true })
+app.disable('x-powered-by');
 
 const app = express();
+app.use(cookieParser());
 const server = http.createServer(app);
 export const io : Server = require('socket.io')(server, {
     cors: '*'
@@ -20,15 +25,18 @@ app.use(express.urlencoded());
 
 app.use('/webhook', webhook);
 
-app.get('/favicon.ico', (req:Request, res: Response) => {
+app.get('/favicon.ico', csrfProtection, (req:Request, res: Response) => {
     res.redirect('https://avatars.githubusercontent.com/u/75560157?v=4');
 })
 
-app.get('/', (req:Request, res: Response) => {
+app.get('/', csrfProtection, (req:Request, res: Response) => {
     res.send('Send a server notice html here');
 });
 
-app.get('*', (req:Request, res:Response) => { 
+app.get('*', [require('express-limit').limit({
+    max:    5,        // 5 requests
+    period: 60 * 1000 // per minute (60 seconds)
+}), csrfProtection], (req:Request, res:Response) => { 
     res.send('404');
 });
  
