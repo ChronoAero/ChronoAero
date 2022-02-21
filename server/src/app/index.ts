@@ -10,10 +10,11 @@ import cookieParser from 'cookie-parser'
 
 //Server app
 export const csrfProtection = csurf({ cookie: true })
-app.disable('x-powered-by');
+
 
 const app = express();
 app.use(cookieParser());
+app.disable('x-powered-by');
 const server = http.createServer(app);
 export const io : Server = require('socket.io')(server, {
     cors: '*'
