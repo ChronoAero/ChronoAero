@@ -1,20 +1,25 @@
-import express from 'express'
-import { Request, Response } from 'express'
-import path from 'path'
-import csurf from 'csurf'
-import cookieParser from 'cookie-parser'
+import express from 'express';
+import { Request, Response } from 'express';
+import path from 'path';
+import csurf from 'csurf';
+import cookieParser from 'cookie-parser';
+import rateLimit from 'express-rate-limit';
+
 
 //Temporary development server
-export const csrfProtection = csurf({ cookie: true })
+const csrfProtection = csurf({ cookie: true })
 
 const app = express();
-app.disable('x-powered-by');
+app.disable('x-powered-by'); 
 app.use(cookieParser())
-app.use(require('express-limit').limit({
-    max:    5,       
-    period: 60 * 1000 
-}))
-app.use(csrfProtection)
+app.use(rateLimit({
+	windowMs: 15 * 60 * 1000, // 15 minutes
+	max: 250, // Limit each IP to 100 requests per `window` (here, per 15 minutes)
+	standardHeaders: true, // Return rate limit info in the `RateLimit-*` headers
+	legacyHeaders: false, // Disable the `X-RateLimit-*` headers
+    message: '429 Too Many Requests'
+}));
+app.use(csrfProtection) 
 
 app.use(express.static(path.join(__dirname, '../../../client/dist')))
 

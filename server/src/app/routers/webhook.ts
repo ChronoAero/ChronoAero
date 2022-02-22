@@ -1,5 +1,5 @@
 import express, {Request, Response} from 'express';
-import { io, csrfProtection } from '..';
+import { io } from '..';
 
 interface ReqData{
     method: string
