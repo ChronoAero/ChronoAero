@@ -1,5 +1,5 @@
 import React from "react";
-import { State } from "../reducers/showcase.reducer";
+import { State } from "../redux/showcase.reducer";
 import { useDispatch, useSelector } from 'react-redux'; 
 
 export const EquationGen = () => {

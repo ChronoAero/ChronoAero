@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { ids } from "webpack";
-import { State } from "../reducers/showcase.reducer";
+import { State } from "../redux/showcase.reducer";
 
 export const Webhook = () => {
 

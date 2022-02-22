@@ -5,7 +5,6 @@ import csurf from 'csurf';
 import cookieParser from 'cookie-parser';
 import rateLimit from 'express-rate-limit';
 
-
 //Temporary development server
 const csrfProtection = csurf({ cookie: true })
 

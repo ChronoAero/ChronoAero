@@ -12,18 +12,8 @@ import rateLimit from 'express-rate-limit';
 //Server app
 const csrfProtection = csurf({ cookie: true });
 
-
-
 const app = express();
-app.use(cookieParser());
 app.disable('x-powered-by');
-app.use(rateLimit({
-	windowMs: 15 * 60 * 1000, // 15 minutes
-	max: 250, // Limit each IP to 100 requests per `window` (here, per 15 minutes)
-	standardHeaders: true, // Return rate limit info in the `RateLimit-*` headers
-	legacyHeaders: false, // Disable the `X-RateLimit-*` headers
-    message: '429 Too Many Requests'
-}));
 const server = http.createServer(app);
 export const io : Server = require('socket.io')(server, {
     cors: '*'
@@ -32,8 +22,16 @@ export const io : Server = require('socket.io')(server, {
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded());
-app.use()
-app.use(csrfProtection)
+app.use(cookieParser());
+app.use(csrfProtection);
+app.use(rateLimit({
+	windowMs: 15 * 60 * 1000, // 15 minutes
+	max: 250, // Limit each IP to 100 requests per `window` (here, per 15 minutes)
+	standardHeaders: true, // Return rate limit info in the `RateLimit-*` headers
+	legacyHeaders: false, // Disable the `X-RateLimit-*` headers
+    message: '429 Too Many Requests'
+}));
+
 
 app.use('/webhook', webhook);
 

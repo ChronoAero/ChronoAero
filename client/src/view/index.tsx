@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import { createStore } from 'redux'
 import { composeWithDevTools } from 'redux-devtools-extension';
-import { showcaseReducer } from "./reducers/showcase.reducer"
+import { showcaseReducer } from "./redux/showcase.reducer"
 import { Provider } from 'react-redux'
 import { Cover } from './components/cover'
 import { Navbar } from './components/navbar'
@@ -15,7 +15,7 @@ export let rootStore = createStore(showcaseReducer, composeWithDevTools());
 class AppRoot extends Component{
 
     render(): React.ReactNode {
-        return <div>
+        return <div className='overflow-x-hidden'>
             <Navbar></Navbar>
             <Cover></Cover>
             <div className="p-24 bg-primary shadow-lg">
@@ -39,6 +39,12 @@ class AppRoot extends Component{
                 <Provider store={rootStore}>
                     <Showcase></Showcase>
                 </Provider>
+            </div>
+            <div className="p-24 bg-secondary shadow-lg">
+                <Section right={false} id="contacts" title="Want to reach me out?" desc={[
+                    "Let me know if you want to work on something together :)",
+                    "Here are my contacts:"
+                ]}></Section>
             </div>
         </div>
     }

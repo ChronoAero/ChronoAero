@@ -1,5 +1,5 @@
 import React from "react";
-import { Types, State, Pages } from "../reducers/showcase.reducer"
+import { Types, State, Pages } from "../redux/showcase.reducer"
 import { useDispatch, useSelector } from 'react-redux'; 
 import { EquationGen } from './equationGen';
 import { Webhook } from './webhook'
@@ -42,12 +42,6 @@ export const Showcase = (props: Props) => {
                             return <div>Shell is ready, waiting for your commands...</div>
                     }
                 })(page)}
-            </div>
-        </div>
-        <div className="flex">
-            <div onClick={() => {dispatch({type: "showcase/decrement"})}} className="text-contrast"> -
-            </div>
-            <div onClick={() => {dispatch({type: "showcase/increment"})}} className="ml-auto text-contrast" > + 
             </div>
         </div>
         <div className="p-1 text-subcontrast font-bold">In for a challenge?</div>
