@@ -10,6 +10,9 @@ module.exports = {
         secondary: "#1a1b26",
         subcontrast: "#6183bb",
         contrast: "#0db9d7"
+      },
+      fontFamily:{
+        sans: ['Rubik']
       }
     }
   }
