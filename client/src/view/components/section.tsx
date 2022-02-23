@@ -10,7 +10,7 @@ interface Props{
 
 export const Section = (props: Props) => {
     return(
-        <div className={`flex items-stretch ${props.right? "flex-row-reverse" : ""}`}>
+        <div className={`flex flex-col-reverse items-stretch ${props.right? "sm:flex-row-reverse" : "sm:flex-row"}`}>
             <motion.div 
                 initial={{opacity:0, x:"-150px"}}
                 whileInView={{opacity:1, x:"0"}}

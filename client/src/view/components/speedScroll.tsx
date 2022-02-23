@@ -10,7 +10,6 @@ interface Props{
 export const SpeedScroll = (props:Props) => {
     
     function handleClick(){
-        console.log(props.id)
         scroller.scrollTo(props.id, {
             duration: 800,
             delay: 0,

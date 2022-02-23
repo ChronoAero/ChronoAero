@@ -23,7 +23,7 @@ app.use(csrfProtection)
 app.use(express.static(path.join(__dirname, '../../../client/dist')))
 
 app.get('*', (req:Request, res:Response) => { 
-    res.sendFile(path.join(__dirname, '../../../client/dist/view/index.html'))
+    res.sendFile(path.join(__dirname, '../../../client/dist/view/public/index.html'))
 });
 
 app.listen(4200, () => {

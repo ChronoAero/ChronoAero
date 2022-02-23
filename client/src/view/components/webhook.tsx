@@ -19,7 +19,7 @@ export const Webhook = () => {
 
     return <div className="flex gap-12">
         <div className="flex-1">
-            send the request to http://localhost:4201/webhook/{socket.id}
+            Send your request to http://localhost:4201/webhook/{socket.id}
         </div>
         <div className="flex-1">
             Incoming Request(s):
