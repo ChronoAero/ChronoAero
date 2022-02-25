@@ -8,7 +8,7 @@ export const Cover = () => {
             animate = {{opacity:1, x:"0"}}
             transition={{ type: "spring", duration: 0.1, stiffness:500, damping:50}} 
         className="absolute w-full grid place-items-end h-96">
-            <img className="h-36 sm:h-52 md:h-auto scale-x-[-1]" src="./view/public/Chrono.png"></img>
+            <img className="h-36 sm:h-52 md:h-72 pixel text-subcontrast" src="./view/public/chrono.png" alt="Chrono"></img>
         </motion.div>
         <motion.div 
             initial={{opacity:0, x:"100vw"}}

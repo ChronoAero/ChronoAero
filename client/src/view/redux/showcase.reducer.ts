@@ -1,5 +1,6 @@
 import { Socket } from "socket.io-client";
 import { io } from 'socket.io-client';
+import config from "../../config";
 
 export enum Pages{
     NULL,
@@ -8,7 +9,7 @@ export enum Pages{
     VIDEOCALL
 }
 
-export type Types = "showcase/equation_gen" | "showcase/webhook" | "showcase/videocall" | "showcase/increment" | "showcase/decrement" | "showcase/equation_rendr" | "showcase/socket_setup" | "showcase/append_requests";
+export type Types = "showcase/equation_gen" | "showcase/webhook" | "showcase/videocall" | "showcase/increment" | "showcase/decrement" | "showcase/equation_rendr" | "showcase/socket_setup" | "showcase/append_requests" | "showcase/spin";
 
 interface Action{
     type:Types
@@ -21,14 +22,16 @@ export interface State{
     socket: Socket
     setupDone: boolean
     requests: any[]
+    spinner: number
 }
 
 export const showcaseReducer = (state:State = {
     page:NaN,
     equation:"",
-    socket: io('http://localhost:4201'),
+    socket: io(config.serverUrl),
     setupDone: false,
-    requests: []
+    requests: [],
+    spinner: 0
 }, action:Action) => {
     switch(action.type){
         case "showcase/equation_gen":
@@ -47,6 +50,8 @@ export const showcaseReducer = (state:State = {
             return {...state, setupDone: true};
         case "showcase/append_requests":
             return {...state, requests: [...state.requests, action.payload]}
+        case "showcase/spin":
+            return {...state, spinner: state.spinner + 1 > 3? 0 : state.spinner + 1}
         default:
             return state
     }

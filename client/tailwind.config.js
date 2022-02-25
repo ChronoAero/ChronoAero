@@ -9,7 +9,8 @@ module.exports = {
         primary: "#16161e",
         secondary: "#1a1b26",
         subcontrast: "#6183bb",
-        contrast: "#0db9d7"
+        contrast: "#0db9d7",
+        symbols: "#b04f15"
       },
       fontFamily:{
         sans: ['Rubik']

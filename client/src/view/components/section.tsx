@@ -6,6 +6,8 @@ interface Props{
     desc : any[]
     id : string
     right : boolean
+    img : string
+    alt : string
 }
 
 export const Section = (props: Props) => {
@@ -25,10 +27,10 @@ export const Section = (props: Props) => {
             <motion.div 
                 initial={{opacity:0, scale: 0.3}}
                 whileInView={{opacity:1, scale: 1}}
-                transition={{ ease: "easeOut", duration: 0.5}} 
+                transition={{ ease: "easeOut", duration: 0.5}}  
                 viewport={{once:true}}
             className="flex-[3] p-4 grid place-items-center">
-                <img className="rounded-xl shadow-lg w-full max-w-xs" src="https://avatars.githubusercontent.com/u/75560157?v=4" alt="Profile Picture"></img>
+                <img className="rounded-xl w-full max-w-xs text-subcontrast pixel" src={props.img} alt={props.alt}></img>
             </motion.div>
         </div>
     )

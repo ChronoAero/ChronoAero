@@ -51,6 +51,6 @@ io.on('connection', (socket :Socket) => {
     socket.join(`webhook/${socket.id}`);
 })
 
-server.listen(4201, () => {
+server.listen(process.env.PORT || 4201, () => {
     console.log('Server is up on http://localhost:4201');
 });

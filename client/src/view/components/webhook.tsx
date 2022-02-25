@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { ids } from "webpack";
+import config from "../../config";
 import { State } from "../redux/showcase.reducer";
 
 export const Webhook = () => {
@@ -19,7 +19,7 @@ export const Webhook = () => {
 
     return <div className="flex gap-12">
         <div className="flex-1">
-            Send your request to http://localhost:4201/webhook/{socket.id}
+            Send your request to {config.serverUrl}webhook/{socket.id}
         </div>
         <div className="flex-1">
             Incoming Request(s):

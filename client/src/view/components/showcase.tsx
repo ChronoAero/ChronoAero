@@ -1,9 +1,10 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Types, State, Pages } from "../redux/showcase.reducer"
 import { useDispatch, useSelector } from 'react-redux'; 
 import { EquationGen } from './equationGen';
 import { Webhook } from './webhook'
 import { motion } from "framer-motion";
+import { UnderConstruction } from "./underConstruction";
 
 interface Props{
 
@@ -16,11 +17,21 @@ const navContent :any[] = [
     "Video Call",
 ]
 
+const spinChar = ['|', '/', '-', '\\']
 
 export const Showcase = (props: Props) => { 
 
     const page = useSelector( (state:State) => state.page);
+    const spinner = useSelector( (state:State) => state.spinner);
     const dispatch = useDispatch();
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+          dispatch({type:"showcase/spin"});
+        }, 100);
+        return () => clearInterval(interval);
+      }, []);
+
 
     return <div>
         <motion.div 
@@ -59,9 +70,9 @@ export const Showcase = (props: Props) => {
                         case Pages.WEBHOOK:
                             return <Webhook></Webhook>
                         case Pages.VIDEOCALL:
-                            return <div>Work In Progress...</div>
+                            return <UnderConstruction></UnderConstruction>
                         default:
-                            return <div>Shell is ready, waiting for your commands...</div>
+                            return <div>Shell is ready, waiting for your commands...<span className="text-symbols">{spinChar[spinner]}</span></div>
                     }
                 })(page)}
             </div>
@@ -78,7 +89,7 @@ export const Showcase = (props: Props) => {
             transition={{ ease: "easeOut", duration: 0.5}} 
             viewport={{once:true}}
         className="bg-secondary h-56 rounded-md my-5 mx-1 p-5 overflow-y-auto">
-             <div className="text-subcontrast font-mono">Work In Progress...</div>
+             <UnderConstruction></UnderConstruction>
         </motion.div>
         <motion.div
             initial={{opacity:0, x:"-150px"}}
@@ -92,7 +103,7 @@ export const Showcase = (props: Props) => {
             transition={{ ease: "easeOut", duration: 0.5}} 
             viewport={{once:true}}
         className="bg-secondary h-56 rounded-md my-5 mx-1 p-5 overflow-y-auto">
-            <div className="text-subcontrast font-mono">Work In Progress...</div>
+            <UnderConstruction></UnderConstruction>
         </motion.div>
     </div>
 }
