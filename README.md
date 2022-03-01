@@ -1,4 +1,4 @@
-<img align="right" alt="Chrono" src="https://chronoaero.github.io/view/public/chrono_scaled.png" style="height:25vw; max-width:300px"/>
+<img align="right" alt="Chrono" src="https://chronoaero.github.io/view/public/chrono_scaled.png" style="height:25vw; max-width:300px padding:20px"/>
 
 # Hi! I'm ChronoAero
 🔗 [chronoaero.github.io](https://chronoaero.github.io)
