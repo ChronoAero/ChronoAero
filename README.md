@@ -1,3 +1,5 @@
+<img align="right" alt="Chrono" src="https://chronoaero.github.io/view/public/chrono_scaled.png" style="height:auto; max-height:200px"/>
+
 # Hi! I'm ChronoAero
 🔗 [chronoaero.github.io](https://chronoaero.github.io)
 
