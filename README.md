@@ -1,7 +1,7 @@
-<img align="right" alt="Chrono" src="https://chronoaero.github.io/view/public/chrono_scaled.png" style="height:25vw; min-width: 100px; max-width:300px padding:20px"/>
-
 # Hi! I'm ChronoAero
 🔗 [chronoaero.github.io](https://chronoaero.github.io)
+
+<img align="right" alt="Chrono" src="https://chronoaero.github.io/view/public/chrono_scaled.png" style="height:25vw; min-width:100px; min-height:300px; max-width:300px; max-height:300px; padding:20px"/>
 
 ## I'm a high school student and simply a ~~hacker~~ programmer 👾
 
@@ -43,4 +43,3 @@ You can click the Preview link to take a look at your changes.
 ChronoAero/ChronoAero is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
 --->
-
