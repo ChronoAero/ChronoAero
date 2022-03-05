@@ -17,6 +17,7 @@
 <img align="left" alt="TypeScript" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" style="padding:5px;" />
 <img align="left" alt="React" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" style="padding:5px;" />
 <img align="left" alt="TailwindCSS" width="26px" src="https://github.com/devicons/devicon/blob/v2.14.0/icons/tailwindcss/tailwindcss-plain.svg" style="padding:5px;" />
+<img align="left" alt="Express" width="26px" src="https://github.com/devicons/devicon/blob/v2.14.0/icons/express/express-original.svg" style="padding:5px;" />
 
 <br/>
 <br/>
