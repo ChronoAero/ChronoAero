@@ -43,11 +43,11 @@
 				<Paragraph title="CurrentlyExperimentingWith()">
 					<p>
 						I like to experiment around with tools I find interesting. I've used
-						them and tried to get something working with them.
+						them and tried to get something working.
 					</p>
 					<p>
 						Of course, learning takes time, I can't say that I'm an expert on
-						them just yet, but Iim quite sure that I have some pretty decent
+						them just yet, but I'm quite sure that I have some pretty decent
 						progress going on here.
 					</p>
 					<p>Here are some tools I'm currently experimenting with:</p>
