@@ -1,4 +1,5 @@
 # Hi! I'm ChronoAero
+
 🔗 [chronoaero.github.io](https://chronoaero.github.io)
 
 <img align="right" alt="Chrono" src="https://chronoaero.github.io/view/public/chrono_scaled.png" style="height:25vw; min-width:100px; min-height:300px; max-width:300px; max-height:300px; padding:20px"/>
@@ -7,8 +8,8 @@
 
 - 🌱 I’m currently learning everything 🤣
 - ⚡ I like to code, study, and play games (for fun though, not for competitive purpose, I'm not that good, shoot)
-- 💬 If you want to reach me out, you can contact me via ```{ Discord: Chrono#9327, Email: tanjoshua13tj@gmail.com }```
- 
+- 💬 If you want to reach me out, you can contact me via `{ Discord: Chrono#9327, Email: tanjoshua13tj@gmail.com }`
+
 ## Language and tools
 
 #### Most of my works revolve around:
@@ -34,6 +35,7 @@
 <h2 style="clear:both;"> Stats </h2>
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=chronoaero&theme=tokyonight)
+
 <!---
 ChronoAero/ChronoAero is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
