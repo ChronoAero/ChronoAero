@@ -1,7 +1,7 @@
 <template>
 	<div class="shadow-xl w-64 cursor-pointer">
 		<img :src="src" :alt="alt" class="pixel h-56 w-56 p-4" />
-		<div class="text-subcontrast text-lg text-center">{{ title }}</div>
+		<div class="text-subcontrast text-lg text-center text-sm">{{ title }}</div>
 	</div>
 </template>
 

@@ -1,13 +1,17 @@
 <template>
-	<div class="flex items-center">
+	<Row class="flex-col sm:flex-row">
 		<slot></slot>
-	</div>
+	</Row>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import Row from './Row.vue';
 export default defineComponent({
-	name: 'Row',
+	name: 'DynamicRow',
+	components: {
+		Row,
+	},
 	props: {
 		enableCollify: {
 			type: Boolean,

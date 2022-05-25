@@ -1,46 +1,48 @@
 <template>
 	<Header></Header>
 	<Parallax></Parallax>
-	<div class="bg-secondary p-16">
-		<Row>
+	<Section class="bg-secondary">
+		<DynamicRow>
 			<PixelArt :src="images.chrono_code" alt="Chrono and a laptop" />
-			<div class="p-8">
-				<Paragraph title="AboutMe()">
-					<p>
-						<i>
-							"I truly believe that every single person has to go through
-							something that absolutely destroys them so they can figure out who
-							they really are."
-						</i>
-					</p>
-					<p>
-						- A sentence that quite helped me go through the current ups and
-						downs.
-					</p>
-					<br />
-					<p>
-						Hi! I'm a typical high school student with interest towards
-						programming, a coder under development phase.
-					</p>
-					<p>
-						I'm someone with a rather calm and serious nature that helps me to
-						be a better listener. When it comes to projects, it makes me try my
-						best on delivering my work output.
-					</p>
-					<p>
-						I might not be that really extroverted one, but I'm open to
-						programming discussions. Since you reach me out this way, this means
-						we should understand each other well.
-					</p>
-					<p>Looking forward to working together with you!</p>
-				</Paragraph>
-			</div>
-		</Row>
-	</div>
-	<div class="bg-primary p-16">
-		<Row>
-			<div class="p-8">
-				<Paragraph title="CurrentlyExperimentingWith()">
+			<Paragraph title="AboutMe()">
+				<p>
+					<i>
+						"I truly believe that every single person has to go through
+						something that absolutely destroys them so they can figure out who
+						they really are."
+					</i>
+				</p>
+				<p>
+					- A sentence that quite helped me go through the current ups and
+					downs.
+				</p>
+				<br />
+				<p>
+					Hi! I'm a typical high school student with interest towards
+					programming, a coder under development phase.
+				</p>
+				<p>
+					I'm someone with a rather calm and serious nature that helps me to be
+					a better listener. When it comes to projects, it makes me try my best
+					on delivering my work output.
+				</p>
+				<p>
+					I might not be that really extroverted one, but I'm open to
+					programming discussions. Since you reach me out this way, this means
+					we should understand each other well.
+				</p>
+				<p>Looking forward to working together with you!</p>
+			</Paragraph>
+		</DynamicRow>
+	</Section>
+	<Section class="bg-primary">
+		<DynamicRow>
+			<PixelArt
+				:src="images.chrono_git"
+				alt="Chrono managing version control"
+			/>
+			<div>
+				<Paragraph title="Experiments()">
 					<p>
 						I like to experiment around with tools I find interesting. I've used
 						them and tried to get something working.
@@ -53,7 +55,7 @@
 					<p>Here are some tools I'm currently experimenting with:</p>
 				</Paragraph>
 				<div class="bg-secondary p-2 rounded-md">
-					<Row>
+					<Row class="flex-wrap">
 						<Logo
 							:src="images.vue"
 							alt="Vue"
@@ -82,13 +84,9 @@
 					</Row>
 				</div>
 			</div>
-			<PixelArt
-				:src="images.chrono_git"
-				alt="Chrono managing version control"
-			/>
-		</Row>
-	</div>
-	<div class="bg-secondary p-16">
+		</DynamicRow>
+	</Section>
+	<Section class="bg-secondary">
 		<Paragraph title="Projects()">
 			<p>
 				While learning, I've also got some projects worked on. We perhaps can
@@ -97,7 +95,7 @@
 			</p>
 			<p>Here are some of them that I can showcase to you:</p>
 		</Paragraph>
-		<Row class="p-4 flex-wrap">
+		<DynamicRow class="flex-wrap">
 			<div v-for="cardData in cardDatas" :key="cardData.title">
 				<Card
 					class="bg-primary p-4 m-4 rounded-md"
@@ -106,24 +104,24 @@
 					:alt="cardData.alt"
 				></Card>
 			</div>
-		</Row>
-	</div>
-	<div class="bg-primary p-16">
-		<Row>
+		</DynamicRow>
+	</Section>
+	<Section class="bg-primary">
+		<DynamicRow>
 			<PixelArt
 				:src="images.chrono_contacts"
 				alt="Chrono holding a letter"
 			></PixelArt>
 			<div>
 				<Paragraph title="Contacts()">
-					<p>This marks the end of this website.</p>
+					<p>This marks the end of this introduction.</p>
 					<p>
 						Interested to contact and interact with me further? Sure! here are
 						my contacts:
 					</p>
 				</Paragraph>
 				<div class="bg-secondary p-2 rounded-md">
-					<Row>
+					<Row class="flex-wrap">
 						<Logo
 							:src="images.discord"
 							alt="Discord"
@@ -139,8 +137,8 @@
 					</Row>
 				</div>
 			</div>
-		</Row>
-	</div>
+		</DynamicRow>
+	</Section>
 </template>
 
 <script lang="ts">
@@ -149,9 +147,11 @@ import Header from './components/Header.vue';
 import Paragraph from './components/Paragraph.vue';
 import Parallax from './components/Parallax.vue';
 import Row from './components/Row.vue';
+import DynamicRow from './components/DynamicRow.vue';
 import PixelArt from './components/PixelArt.vue';
 import Logo from './components/Logo.vue';
 import Card from './components/Card.vue';
+import Section from './components/Section.vue';
 import chrono_code from './assets/chrono_code.png';
 import chrono_git from './assets/chrono_git.png';
 import chrono_contacts from './assets/chrono_contacts.png';
@@ -170,10 +170,12 @@ export default defineComponent({
 		Header,
 		Paragraph,
 		Parallax,
+		DynamicRow,
 		Row,
 		PixelArt,
 		Logo,
 		Card,
+		Section,
 	},
 	setup() {
 		const Redirect = (url: string) => {
