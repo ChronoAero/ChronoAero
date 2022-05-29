@@ -3,56 +3,62 @@
 	<Parallax></Parallax>
 	<Section class="bg-secondary">
 		<DynamicRow>
-			<PixelArt :src="images.chrono_code" alt="Chrono and a laptop" />
+			<AnimationContainer>
+				<PixelArt :src="images.chrono_code" alt="Chrono and a laptop" />
+			</AnimationContainer>
+
 			<Paragraph title="AboutMe()">
-				<p>
-					<i>
-						"I truly believe that every single person has to go through
+				<TweenText
+					class="italic"
+					text='"I truly believe that every single person has to go through
 						something that absolutely destroys them so they can figure out who
-						they really are."
-					</i>
-				</p>
-				<p>
-					- A sentence that quite helped me go through the current ups and
-					downs.
-				</p>
+						they really are."'
+				/>
+				<TweenText
+					text="- A sentence that quite helped me go through the current ups and
+					downs."
+				/>
 				<br />
-				<p>
-					Hi! I'm a typical high school student with interest towards
-					programming, a coder under development phase.
-				</p>
-				<p>
-					I'm someone with a rather calm and serious nature that helps me to be
+				<TweenText
+					text="Hi! I'm a typical high school student with interest towards
+					programming, a coder under development phase."
+				/>
+				<TweenText
+					text="I'm someone with a rather calm and serious nature that helps me to be
 					a better listener. When it comes to projects, it makes me try my best
-					on delivering my work output.
-				</p>
-				<p>
-					I might not be that really extroverted one, but I'm open to
+					on delivering my work output."
+				/>
+				<TweenText
+					text="I might not be that really extroverted one, but I'm open to
 					programming discussions. Since you reach me out this way, this means
-					we should understand each other well.
-				</p>
-				<p>Looking forward to working together with you!</p>
+					we should understand each other well."
+				/>
+				<TweenText text="Looking forward to working together with you!" />
 			</Paragraph>
 		</DynamicRow>
 	</Section>
 	<Section class="bg-primary">
-		<DynamicRow>
-			<PixelArt
-				:src="images.chrono_git"
-				alt="Chrono managing version control"
-			/>
+		<DynamicRow class="sm:flex-row-reverse">
+			<AnimationContainer>
+				<PixelArt
+					:src="images.chrono_git"
+					alt="Chrono managing version control"
+				/>
+			</AnimationContainer>
 			<div>
 				<Paragraph title="Experiments()">
-					<p>
-						I like to experiment around with tools I find interesting. I've used
-						them and tried to get something working.
-					</p>
-					<p>
-						Of course, learning takes time, I can't say that I'm an expert on
+					<TweenText
+						text="I like to experiment around with tools I find interesting. I've used
+						them and tried to get something working."
+					/>
+					<TweenText
+						text="Of course, learning takes time, I can't say that I'm an expert on
 						them just yet, but I'm quite sure that I have some pretty decent
-						progress going on here.
-					</p>
-					<p>Here are some tools I'm currently experimenting with:</p>
+						progress going on here."
+					/>
+					<TweenText
+						text="Here are some tools I'm currently experimenting with:"
+					/>
 				</Paragraph>
 				<div class="bg-secondary p-2 rounded-md">
 					<Row class="flex-wrap">
@@ -88,12 +94,14 @@
 	</Section>
 	<Section class="bg-secondary">
 		<Paragraph title="Projects()">
-			<p>
+			<TweenText
+				text="
 				While learning, I've also got some projects worked on. We perhaps can
 				work together on some of them, or it can also be a consideration for you
 				to put me as a contributor in your projects, which will be great!
-			</p>
-			<p>Here are some of them that I can showcase to you:</p>
+			"
+			/>
+			<TweenText text="Here are some of them that I can showcase to you:" />
 		</Paragraph>
 		<DynamicRow class="flex-wrap">
 			<div v-for="cardData in cardDatas" :key="cardData.title">
@@ -108,17 +116,20 @@
 	</Section>
 	<Section class="bg-primary">
 		<DynamicRow>
-			<PixelArt
-				:src="images.chrono_contacts"
-				alt="Chrono holding a letter"
-			></PixelArt>
+			<AnimationContainer>
+				<PixelArt
+					:src="images.chrono_contacts"
+					alt="Chrono holding a letter"
+				></PixelArt>
+			</AnimationContainer>
 			<div>
 				<Paragraph title="Contacts()">
-					<p>This marks the end of this introduction.</p>
-					<p>
+					<TweenText text="This marks the end of this introduction." />
+					<TweenText
+						text="
 						Interested to contact and interact with me further? Sure! here are
-						my contacts:
-					</p>
+						my contacts:"
+					/>
 				</Paragraph>
 				<div class="bg-secondary p-2 rounded-md">
 					<Row class="flex-wrap">
@@ -149,6 +160,8 @@ import Parallax from './components/Parallax.vue';
 import Row from './components/Row.vue';
 import DynamicRow from './components/DynamicRow.vue';
 import PixelArt from './components/PixelArt.vue';
+import TweenText from './components/CypherText.vue';
+import AnimationContainer from './components/AnimationContainer.vue';
 import Logo from './components/Logo.vue';
 import Card from './components/Card.vue';
 import Section from './components/Section.vue';
@@ -176,6 +189,8 @@ export default defineComponent({
 		Logo,
 		Card,
 		Section,
+		TweenText,
+		AnimationContainer,
 	},
 	setup() {
 		const Redirect = (url: string) => {
