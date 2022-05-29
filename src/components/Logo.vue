@@ -2,7 +2,7 @@
 	<img
 		:src="src"
 		:alt="alt"
-		class="h-16 w-16 text-subcontrast p-2 drop-shadow cursor-pointer"
+		class="h-16 w-16 p-2 cursor-pointer an-hover:expand"
 	/>
 </template>
 
