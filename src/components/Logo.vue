@@ -2,7 +2,7 @@
 	<img
 		:src="src"
 		:alt="alt"
-		class="h-16 w-16 p-2 cursor-pointer an-hover:expand"
+		class="h-16 w-16 p-2 cursor-pointer hover:scale-[1.05] hover:bg-primary rounded-md transition-all"
 	/>
 </template>
 

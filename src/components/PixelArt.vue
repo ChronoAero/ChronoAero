@@ -2,7 +2,7 @@
 	<img
 		:src="src"
 		:alt="alt"
-		class="text-subcontrast p-8 pixel h-80 min-w-80 max-w-80 sm:h-96 sm:min-w-96 sm:max-w-96 an-entrance"
+		class="text-subcontrast p-8 pixel h-80 min-w-[20rem] max-w-[20rem] sm:h-96 sm:min-w-[24rem] sm:max-w-[24rem] an-entrance"
 	/>
 </template>
 

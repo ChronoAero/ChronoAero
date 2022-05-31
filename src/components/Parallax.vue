@@ -1,5 +1,5 @@
 <template>
-	<Section class="h-144 grid place-items-center bg-primary">
+	<Section class="h-[36rem] grid place-items-center bg-primary">
 		<div class="text-center">
 			<TweenText
 				class="text-contrast text-3xl md:text-6xl font-bold"

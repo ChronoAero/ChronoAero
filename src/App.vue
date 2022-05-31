@@ -78,9 +78,9 @@
 							@click="Redirect('https://www.typescriptlang.org')"
 						/>
 						<Logo
-							:src="images.windicss"
-							alt="WindiCSS"
-							@click="Redirect('https://windicss.org')"
+							:src="images.tailwindcss"
+							alt="TailwindCSS"
+							@click="Redirect('https://tailwindcss.com/')"
 						/>
 						<Logo
 							:src="images.unity"
@@ -172,7 +172,7 @@ import chrono_packages from './assets/chrono_packages.png';
 import vue from './assets/vuejs-original.svg';
 import vite from './assets/vite.svg';
 import typescript from './assets/typescript.png';
-import windicss from './assets/windicss.svg';
+import tailwindcss from './assets/tailwindcss.svg';
 import unity from './assets/unity.png';
 import discord from './assets/discord.svg';
 import github from './assets/github.png';
@@ -218,7 +218,7 @@ export default defineComponent({
 				chrono_contacts,
 				vue,
 				vite,
-				windicss,
+				tailwindcss,
 				typescript,
 				unity,
 				discord,
