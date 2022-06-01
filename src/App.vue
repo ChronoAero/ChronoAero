@@ -8,30 +8,12 @@
 			</AnimationContainer>
 
 			<Paragraph title="AboutMe()">
+				<TweenText text="Hello, codenamed ChronoAero here!" />
 				<TweenText
-					class="italic"
-					text='"I truly believe that every single person has to go through
-						something that absolutely destroys them so they can figure out who
-						they really are."'
+					text="I'm someone with a rather calm and serious nature that helps me to be a better listener. When it comes to projects, it makes me try my best on delivering my work output."
 				/>
 				<TweenText
-					text="- A sentence that quite helped me go through the current ups and
-					downs."
-				/>
-				<br />
-				<TweenText
-					text="Hi! I'm a typical high school student with interest towards
-					programming, a coder under development phase."
-				/>
-				<TweenText
-					text="I'm someone with a rather calm and serious nature that helps me to be
-					a better listener. When it comes to projects, it makes me try my best
-					on delivering my work output."
-				/>
-				<TweenText
-					text="I might not be that really extroverted one, but I'm open to
-					programming discussions. Since you reach me out this way, this means
-					we should understand each other well."
+					text="I might not be that really extroverted one, but I'm open to programming discussions. Since you reach me out this way, this means we should understand each other well."
 				/>
 				<TweenText text="Looking forward to working together with you!" />
 			</Paragraph>
@@ -48,8 +30,7 @@
 			<div>
 				<Paragraph title="Experiments()">
 					<TweenText
-						text="I like to experiment around with tools I find interesting. I've used
-						them and tried to get something working."
+						text="I like to experiment around with tools I find interesting. I've tried to get something interesting working with them."
 					/>
 					<TweenText
 						text="Of course, learning takes time, I can't say that I'm an expert on
@@ -96,12 +77,15 @@
 		<Paragraph title="Projects()">
 			<TweenText
 				text="
-				While learning, I've also got some projects worked on. We perhaps can
-				work together on some of them, or it can also be a consideration for you
-				to put me as a contributor in your projects, which will be great!
+				While learning, I've also got some projects worked on. We perhaps can work together on some of them.
 			"
 			/>
-			<TweenText text="Here are some of them that I can showcase to you:" />
+			<TweenText
+				text="
+				It can also be a consideration for you to put me as a contributor in your projects, which will be great!
+			"
+			/>
+			<TweenText text="Here are some of them that I can showcase:" />
 		</Paragraph>
 		<DynamicRow class="flex-wrap">
 			<div v-for="cardData in cardDatas" :key="cardData.title">

@@ -5,7 +5,7 @@
 				class="text-contrast text-3xl md:text-6xl font-bold"
 				text="&lt;ChronoAero/&gt;"
 			/>
-			<TweenText class="text-contrast text-2xl" text="Indev Coder" />
+			<TweenText class="text-contrast text-2xl" text="Learning to code…" />
 		</div>
 	</Section>
 </template>
